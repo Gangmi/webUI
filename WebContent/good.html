@@ -1,0 +1,32 @@
+<!-- 색상 rrggbb (red / green/  blue) : 16진수
+	0~9 (10진수)  + A , B, C, D, E ,F (15) 이다.
+	#FF3300 이면 #F30 으로 사용하는것도 가능하다.
+	 
+
+ -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+#txt {color: blue}
+/*
+	웹은 rgb 색상으로도 가능
+	*/
+</style>
+</head>
+<body>
+
+	<div id='txt'>표준안따름</div>
+	<script>
+		var txt =document.getElementById("txt");
+		txt.onclick = function(){
+			alert("확인2")
+		}
+	</script>
+
+</body>
+</html>

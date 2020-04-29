@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>06_html5_simpleform.html</title>
+    <!--외부 css 연결하기-->
+    <link href="/WebUI/WebContent/2_css_class/css/myform.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <form action="" method="post">
+        <!-- 기본은 get방식이고 , 보안적인것은post방식 , 등등이있다. -->
+        <fieldset>
+            <legend>회원가입</legend>
+            <ol>
+                <li>
+                    <label for="irum">이름 &nbsp;</label><input id="irum" name="irum" type="text" />
+                    <!-- name은 서버단에서 보는 것-->
+                </li>
+                <li>
+                    <label for='gender'>성별</label>
+
+                    <input type='radio' id='gender' name='gender' value='남자' checked="checked" />남자
+                    <input type='radio' id='gender' name='gender' value='여자' />여자
+
+                </li>
+                <li>
+                    <label for='job' id=job> 직업 &nbsp;</label>
+                    <select id='job ' name="job">
+                        <option value="">직업선택</option>
+                        <option id=job name='job' value="학생">학생</option>
+                        <option id=job name='job' value="회사원">회사원</option>
+                        <option id=job name='job' value="기타">기타</option>
+                    </select>
+
+                </li>
+                <li>
+                    <label for='hobby' id='hobby'>취미 &nbsp;</label>
+                    <input id='hobby' name=hobby type='checkbox' value='sleep' />잠자기
+                    <input id='hobby' name=hobby type='checkbox' value='eat' />먹기
+                    <input id='hobby' name=hobby type='checkbox' value='breathe' />숨쉬기
+                    <input id='hobby' name=hobby type='checkbox' value='mung' />멍때리기
+                </li>
+                <li>
+                    <label for='honey'>애인&nbsp;</label>
+                    <input type="radio" id='honey' name='honey' value='yes' />있다
+                    <input type="radio" id='honey' name='honey' checked="checked" value='no' /> 없다
+                </li>
+
+                <li>
+                    <!-- 웹과 앱 -->
+                    <label for=""> 여행하고싶은 나라? &nbsp;</label><input type='text' list='contries'>
+                    <datalist id='contries'>
+                        <option>가나</option>
+                        <option>제주도</option>
+                        <option>몰랑</option>
+                    </datalist>
+                </li>
+
+
+
+            </ol>
+
+            <input type='submit' value='서버에전송' />
+            <input type='reset' value='취소' />
+
+        </fieldset>
+
+
+
+    </form>
+
+
+
+
+
+
+
+</body></html>
